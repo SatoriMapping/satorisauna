@@ -1,2 +1,2 @@
 # satorisauna.com
-Tailor-made sauna building from design to löyly
+Op maat gemaakte residentiële sauna, van ontwerp tot löyly
