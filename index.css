@@ -1,0 +1,9 @@
+nav {
+    background-color: #bd9176;
+    height: 30x;
+}
+
+nav li{
+    display: inline-block;
+    width: 80px;
+}
