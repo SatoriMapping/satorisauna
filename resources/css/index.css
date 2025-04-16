@@ -1,0 +1,336 @@
+/* colors */
+:root {
+    --zacht-grijs: #adadad;
+    --diep-houtbruin: #402d26;
+    --ivoorwit: #f0ead6; 
+    --mat-zwart: #1e1e1e; 
+    --diep-jade-groen: #00695c; /
+}
+
+* {
+    background-color: var(--ivoorwit);
+}
+
+/* centering */
+
+.center_container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* typography */
+
+h1 {
+    font-family: "montserrat", sans-serif;
+    color: var(--zacht-grijs);
+    font-weight: 800;
+    font-size: 5vw;
+    margin-bottom: 0.05rem;
+}
+
+h2 {
+    font-family: "lora", serif;
+    color: var(--mat-zwart);
+    font-weight: 500;
+    font-size: 3vw;
+    margin-top: 0.05rem;
+}
+
+h3 {
+    font-family: "montserrat", sans-serif;
+    color: var(--diep-houtbruin);
+    font-weight: 700;
+    font-size: 1.5vw;
+    margin: 0.5rem 0; 
+}
+
+h4 {
+    font-family: "lora", serif;
+    color: var(--mat-zwart);
+    font-weight: 500;
+    font-size: 2vw;
+    margin-top: 0.05rem;
+}
+
+p {
+    font-family: "lora", serif;
+    color: var(--mat-zwart);
+    font-weight: 500;
+    font-size: 1vw;
+}
+
+/* navbar */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.navbar_logo {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.navbar_logo img {
+    padding-left: 2rem;
+    background-color: white;
+}
+
+.navbar_right {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 1rem; 
+    background-color: white;
+    border-radius: 10px;
+    margin-right: 3rem;
+}
+
+.navbar_menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    max-width: 400px;
+    background-color: white;
+}
+
+.nav_link {
+    text-decoration: none;
+    padding: 0 1rem;
+    color: var(--diep-houtbruin);
+    font-family: "montserrat", sans-serif;
+    background-color: white;
+}
+
+.navbar_hamburger {
+    display: none;
+}
+
+.button {
+    font-family: "montserrat", sans-serif;
+    font-weight: 700;
+    color: var(--ivoorwit);
+    background-color: var(--diep-jade-groen);
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.button:hover {
+    background-color: #004d40;
+    transform: translateY(-2px);
+}
+
+.button:active {
+    transform: translateY(0);
+}
+
+.button:focus {
+    outline: 1px solid var(--zacht-grijs);
+    outline-offset: 2px;
+}
+
+.button:disabled {
+
+}
+
+/* main */
+
+.hero_container {
+    display: flex;
+    padding-top: 5%;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 60vh;
+    gap: 2rem;
+}
+
+.hero_copy {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 50%;
+}
+
+.hero-image {
+    max-width: 50%;
+    height: 100%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/* slide deck */
+
+.slide_deck {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.slide-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid var(--diep-houtbruin);
+    border-radius: 5px;
+    flex: 1;
+    max-width: 30%;
+    padding: 1rem;
+    text-align: center;
+}
+
+.slide-item img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+/* aligned sections */
+
+.section_left {
+    height: 160px;
+    text-align: left;
+}
+
+.section_left h3, .section_left p {
+    padding-bottom: 0.1rem;
+    margin: 0 0 0 10%;
+    line-height: 1;
+}
+
+.section_left h3 {
+    margin-top: 50px;
+    margin-bottom: 0.2rem;
+}
+
+.section_right {
+    height: 120px;
+    text-align: center;
+}
+
+.section_right h3 {
+    margin-top: 40px;
+}
+
+/* over */
+
+.over {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.over img {
+    max-height: 150px;
+    min-height: 50px;
+    width: auto;
+    border-radius: 10px;
+    margin-left: 50px;
+}
+
+
+/* Footer */
+.footer {
+    background-color: var(--diep-jade-groen); 
+    width: 100vw; 
+    margin-left: calc(-50vw + 50%); 
+    margin-right: calc(-50vw + 50%);
+    padding: 5rem 0;
+    color: var(--ivoorwit); 
+}
+
+.footer_container {
+    max-width: 1000px; /* Match center_container */
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 2rem; /* Space between columns */
+}
+
+.footer_left, .footer_right {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_left ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer_link {
+    text-decoration: none;
+    color: var(--ivoorwit);
+    font-family: "montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.footer_link:hover {
+    color: var(--zacht-grijs);
+}
+
+.footer_right {
+    margin-top: 40px;
+    text-align: right;
+}
+
+.footer_right p {
+    font-family: "lora", serif;
+    font-weight: 400;
+    font-size: 0.7rem;
+    margin: 0.25rem 0;
+    color: var(--ivoorwit);
+}
+
+/* Override global background for footer and its descendants */
+.footer, .footer * {
+    background-color: transparent; /* Remove ivory background */
+}
+
+/* Ensure footer itself has the correct background */
+.footer {
+    background-color: var(--diep-jade-groen) !important; /* Reinforce deep jade green */
+}
+
+/* temporary 
+
+* {
+    border: 1px solid red;
+} */
+
+
+/*
+
+slide deck flex container met 3 slide containers erin. In elke slide container img + h3 + p
+
+section met H2 + p en background left aligned
+
+section met H2 + p en background right aligned
+
+over deel container met 1 left container met img foto + img linked + img IG  en 1 right container met H3 + p
+
+footer container met 1 container left met sitemap en 1 container right met bedrijfsinfo
+*/

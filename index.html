@@ -1,44 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 <head>
-        <title>Satori Sauna</title>
-        <link href="./resources/css/index.css" rel="stylesheet">
-        <link href="index.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satori Sauna</title>
+    <link href="./resources/css/index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>Projecten</li>
-                <li>Werkwijze</li>
-                <li>Over</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-            <h1>Residentiële op maat gemaakte sauna</h1>
-            <!--foto thuis veiligheid + CTA-->
-            <h2>Thuis je eigen sauna</h2>
-            <!--foto spa in je kleine huis en grote huis-->
-            <h3>Of je nu 4 of 20 vierkante meter ruimte hebt</h3>
-            <!--foto afwerkings detail-->
-            <h3>Van ontwerp tot afgewerking maken we samen jouw sauna thuis</h3>
-            <!--foto mezelf + CTA-->
-            <h4>Vanuit een passie voor sauna</h4>
-    </main>
-    <footer>
-        <ul>
-            <li>Home</li>
-            <li>Projecten</li>
-            <li>Werkwijze</li>
-            <li>Over</li>
-            <li>Privacy policy</li>
-            <li>Contact</li>
-        </ul>
-            <!--social media links-->
-            <p>&COPY; 2025 by Maarten Kesteloot</p>
-    </footer>
+    <div class="center_container">
+        <header>
+            <nav class="navbar">
+                <div class="navbar_logo"><img src="resources/images/Satori Sauna avatar logo.png" alt="Satori Sauna logo"/></div>
+                <div class="navbar_hamburger">☰</div>
+                <div class="navbar_right">
+                    <ul class="navbar_menu">
+                        <li ><a href="#" class="nav_link">Projecten</a></li>
+                        <li ><a href="#" class="nav_link">Werkwijze</a></li>
+                        <li ><a href="#" class="nav_link">Over</a></li>
+                    </ul>
+                    <button class="button">Contact</button>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="hero_container">
+                <div class="hero_copy">
+                    <h1>Op maat gemaakte sauna</h1>
+                    <h2>Thuis je eigen sauna</h2>
+                </div>
+                <div class="hero-image">
+                    <img src="resources/images/Sauna met een uitzicht door ruit op meer van water .jpg" alt="Sauna met een uitzicht door ruit op meer van water"/>
+                </div>
+            </div> 
+            <!--foto spa in je kleine huis en grote huis + 
+            werkwijze omvat links artikelen 'lees alles over traditionele Finse sauna constructie' 
+            met cruciale onderwerpen: grootte, verwarming, zitbanken,... -->
+            <div class="slide_deck">
+                <div class="slide-item">
+                    <img src="resources/images/Sauna thuis residentieel gallerij 2.jpg" alt="Sauna thuis residentieel"/>
+                    <h3>Spa thuis</h3>
+                    <p>In je privé</p>
+                </div>
+                <div class="slide-item">
+                    <img src="resources/images/Sauna thuis residentieel gallerij 1.jpg" alt="Sauna thuis residentieel"/>
+                    <h3>Altijd beschikbaar</h3>
+                    <p>Volgens jouw wensen</p>
+                </div>
+                <div class="slide-item">
+                    <img src="resources/images/Sauna thuis residentieel gallerij 3.jpg" alt="Sauna thuis residentieel"/>
+                    <h3>Op maat ontworpen</h3>
+                    <p>Van houtsoort tot accessoires</p>
+                </div>
+            </div>
+            <div class="section_left">
+                <h3>Van ontwerp tot afgewerking</h3>
+                <p>Of je nu 4 of pakweg 20 vierkante meter ruimte hebt</p>
+                <!--foto afwerkings detail-->
+            </div>
+            <div class="section_right">
+                <h3>Samen maken we jouw sauna thuis</h3>
+            </div>
+            <div class="over">
+                <img src="resources/images/Over mij foto Maarten Kesteloot.jpeg" alt="Over mij foto Maarten Kesteloot"/>
+                <h4>Vanuit een passie voor sauna</h4>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer_container">
+                <div class="footer_left">
+                    <ul>
+                        <li><a href="#" class="footer_link">Home</a></li>
+                        <li><a href="#" class="footer_link">Projecten</a></li>
+                        <li><a href="#" class="footer_link">Werkwijze</a></li>
+                        <li><a href="#" class="footer_link">Over</a></li>
+                        <li><a href="#" class="footer_link">Privacy policy</a></li>
+                        <li><a href="#" class="footer_link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer_right">
+                    <p>Satori Mapping Comm. V BE0600820077</p>
+                    <p>Veldm.Montgomerystraat 128, 8520 Kuurne</p>
+                    <p>© 2025 by Maarten Kesteloot aka Satori</p>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
