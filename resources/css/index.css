@@ -138,10 +138,6 @@ p {
     outline-offset: 2px;
 }
 
-.button:disabled {
-
-}
-
 /* main */
 
 .hero_container {
@@ -171,6 +167,7 @@ p {
     object-fit: cover;
     object-position: center;
     display: block;
+    border-radius: 10px;
 }
 
 /* slide deck */
@@ -214,6 +211,7 @@ p {
     height: 160px;
     text-align: left;
     margin-left: 10%;
+    margin-top: 10%;
 }
 
 .section_left h3, .section_left p, .section_right h3, .section_right p {
@@ -338,7 +336,3 @@ p {
 .footer {
     background-color: var(--diep-jade-groen) !important; 
 }
-
-* {
-    border: 1px solid red;
-} 
